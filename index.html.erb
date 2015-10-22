@@ -1,0 +1,34 @@
+<div class="flex-container ">
+  <div class="flex-item login">
+    <div class="trigger-container">
+      <a class="sign-in trigger active" data-id="sign-in">Sign in</a>
+      <a class="sign-up trigger" data-id="sign-up">Sign up</a>
+    </div>
+    <%= notice %>
+    <%= devise_error_messages! %>
+
+    <div class="sign-in box">
+      <%= form_for resource, url: session_path(resource_name) do |f| %>
+      <%= f.text_field :email, class:"text-field", placeholder:"Email"%>
+      <%= f.password_field :password, class:"text-field", placeholder:"Password"%>
+      <div class='remember'>
+        <%= f.label :remember_me %>
+        <%= f.check_box :remember_me %>
+      </div>
+      <%= f.submit 'Sign In', class:"submit" %>
+      <% end %>
+    </div>
+    <div class="sign-up box hidden">
+      <%= form_for resource, url: registration_path(resource_name) do |f| %>
+      <%= f.text_field :email, class:"text-field", placeholder:"Email" %>
+      <%= f.password_field :password, class:"text-field", placeholder:"Password" %>
+      <%= f.password_field :password_confirmation, class:"text-field", placeholder:"Password Confirmation", autocomplete: "off" %>
+      <%= f.submit 'Sign Up', class:"submit" %>
+      <% end %>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="forgot"><%= link_to "Forgot your password?", new_password_path(:user) %></div>
+  </div>
+</div>

@@ -1,0 +1,134 @@
+body {
+  margin:0;
+  padding:0;
+  background: #45484d; /* Old browsers */
+  background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #45484d 0%,#000000 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+a {
+  cursor:pointer;
+  color: #55C3DC;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow:hidden;
+}
+
+.trigger-container {
+  margin: 36px 12px 36px 12px;
+}
+
+a.trigger {
+  display:inline-block;
+  padding: 8px 16px;
+  margin:0;
+  text-transform: uppercase;
+  color:#73726D;
+  font-size: 1.2em;
+}
+
+a.trigger.active {
+  border-bottom: rgba(0,0,0,0.3) 3px solid;
+  color: #fff;
+}
+
+a.trigger:hover {
+  border-bottom: 3px solid #fff;
+}
+
+.hidden {
+  display:none;
+}
+
+.flex-item.login {
+  padding: 12px;
+  background: #fff;
+  background: #55c3dc;
+}
+
+.flex-item.login .text-field {
+  border:0;
+  width: 92%;
+  padding: 10px 4%;
+  font-size: 1.2em;
+  margin: 18px 0;
+  background: rgba(0,0,0,0.3);
+  border-radius: 24px;
+}
+
+.flex-item.login .submit {
+  width: 100%;
+  padding: 10px 4%;
+  font-size: 1.2em;
+  background: #fff;
+  color: #55c3dc;
+  border:0;
+  margin: 18px 0;
+  cursor: pointer;
+  border-radius: 24px;
+}
+
+.remember {
+  margin: 12px auto;
+  text-align: right;
+}
+
+.flex-item.login label {
+  color:rgba(0,0,0,0.5);
+}
+
+.text-field::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.text-field:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+
+.text-field::-moz-placeholder {  /* Firefox 19+ */
+  color: #fff;
+}
+
+.text-field:-ms-input-placeholder {
+  color: #fff;
+}
+
+.flex-item.login h1 {
+  text-align:center;
+}
+
+input {
+  outline: none;
+}
+
+.divider {
+  width: 100%;
+  height: 5px;
+  margin: 14px 0;
+  border-radius:10px;
+  background: rgba(0,0,0,0.3);
+}
+
+.forgot a {
+  color: rgba(0,0,0, 0.5);
+}
+
+.forgot {
+  text-align:center;
+  margin: 44px 0;
+}
+
+.field_with_errors input {
+  border: 2px solid #E24B2C !important;
+}
